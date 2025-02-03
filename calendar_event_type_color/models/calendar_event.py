@@ -12,4 +12,5 @@ class CalendarEvent(models.Model):
     @api.depends("categ_ids")
     def _compute_color(self):
         for event in self:
-            event.color = fields.first(event.categ_ids).color
+            first_tag = fields.first(event.categ_ids)
+            event.color = first_tag.color if first_tag else 0

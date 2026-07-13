@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-oca-calendar"
-version = "18.0.20260209.0"
+version = "18.0.20260623.0"
 dependencies = [
+    "odoo-addon-calendar_event_description_layout==18.0.*",
     "odoo-addon-calendar_event_type_color==18.0.*",
     "odoo-addon-calendar_export_ics==18.0.*",
     "odoo-addon-calendar_import_ics==18.0.*",
